@@ -25,7 +25,7 @@
   <h4 style = "color:blue">
     Background
   </h4>
-  <p style = "font-size: 19px;" onclick = "visitPage();">
+  <p id = "BG" style = "font-size: 19px;">
   </p>
   <button onclick = "visitPage();">
     Background
@@ -33,6 +33,7 @@
 
   <script>
     function visitPage(){
+        var button = document.getElementById("BG")
         window.location = "https://www.youtube.com"
     }
   </script>
