@@ -13,24 +13,34 @@
 </head>
 
 <style>
-#center {
-  position: absolute;
-  right: 3px;  
-} 
+p.thick {
+  font-weight: bold;
+}
+
+#parent {
+  position: relative;
+}
+
+#child {
+  position: absolut;
+  right: 40px;
+}
+
 </style>
 
 <body>
   <h1>Coy Fouchia's Portfolio</h1>
 
-  <h4 style = "color:blue">
+  <div class = "thick, parent" id = "BG" style = "font-size: 32px;">
     Background
-  </h4>
-  <p id = "BG" style = "font-size: 19px;">test
-  </p>
-  <button onclick = "visitPage();">
-    Background
-  </button>
-
+    <div class = "thick, child" id = "project" style = "font-size: 32px;">
+      Projects
+      <div class = "thick, child" id = "pictures" style = "font-size: 32px">
+        Pictures
+      </div>
+    </div>
+  </div>
+  
   <script>
     var button = document.getElementById("BG");
     button.onclick = function visitPage(){
