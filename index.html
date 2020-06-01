@@ -17,33 +17,26 @@ p.thick {
   font-weight: bold;
 }
 
-p.parent {
-  position: relative;
+p.border {
   border: solid 3px #9e70ba;
   text-align: center;
 }
 
-p.child {
-  position: absolute;
-  left: 40px;
-  border: solid 3px #9e70ba;
-  text-align: center;
-}
 
 </style>
 
 <body>
   <h1>Coy Fouchia's Portfolio</h1>
 
-  <div class = "parent" id = "BG" style = "font-size: 32px;">
+  <p class = "parent" id = "BG" style = "font-size: 32px;">
     Background
-    <div class = "child" id = "project" style = "font-size: 32px;">
-      Projects
-      <div class = "child" id = "pictures" style = "font-size: 32px">
-        Pictures
-      </div>
-    </div>
-  </div>
+  </p>
+  <p class = "child" id = "project" style = "font-size: 32px;">
+    Projects
+  </p>
+  <p class = "child" id = "pictures" style = "font-size: 32px">
+    Pictures
+  </p>
   
   <script>
     var button = document.getElementById("BG");
