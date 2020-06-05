@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Coy Fouchia's Portfolio</title>
+  <meta name="author" content="Coy Fouchia">
+  <meta name="description" content="This is where my portfolio will be located.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<style>
+p.thick {
+  font-weight: 900;
+}
+
+.nav {
+  background-color: Black;
+  overflow: hidden;
+}
+
+.nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav a.active {
+  background-color: #4cad4c;
+  color: white;
+}
+</style>
+
+<body>
+  <div id = "mainBorder">
+    <h1>Coy Fouchia's Portfolio</h1>
+  </div>
+
+  <div class = "nav">
+    <a class = "active" href = "#home">
+      Home
+    </a>
+    <a href = "#projects">
+      Projects
+    </a>
+    <a href = "#pictures">
+      Pictures
+    </a>
+  </div>
+  
+  <p class = "thick" style = "font-size: 32px;">
+    Projects
+  </p>
+          
+  <p id = "AutoCorr">Autocorrect Project(Python)</p>
+  <p id = "BattleShip">Battleship(Python)</p>
+  <p id = "BlackJack">Blackjack(Python)</p>
+            
+  <script src="js/script.js"></script>
+</body>
+
+</html>
