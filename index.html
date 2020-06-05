@@ -13,8 +13,28 @@
 </head>
 
 <style>
-p.thick {
+.thick {
   font-weight: 900;
+}
+
+.header {
+  border: 5px;
+  text-align: center;
+}
+
+.body {
+  display: flex;
+  background-color: white;
+}
+
+.sidepanel {
+  flex: 30%;
+  background-color: grey;
+}
+
+.mainpanel {
+  flex: 70%;
+  background-color: white;
 }
 
 .nav {
@@ -43,7 +63,7 @@ p.thick {
 </style>
 
 <body>
-  <div id = "mainBorder">
+  <div id = "header">
     <h1>Coy Fouchia's Portfolio</h1>
   </div>
 
@@ -58,19 +78,19 @@ p.thick {
       Pictures
     </a>
   </div>
-  
-
     
-  <p class = "thick" style = "font-size: 32px;">
-    Background
-  </p>
+  <div class = "side">
+    <p>
+      Background
+    </p>
       
-  <p style = "font-size: 18px">
-    My name is Coy Fouchia Jr. and I am an upcoming sophmore at Dillard University pursuing a major in Computer Science.
-    I chose Computer Science as my major because I always had an interests in video games and how they were made. 
-    It had always interest me how did the company was able to make some of my favorite games. 
-    The section of game creation the most was the back-end section.
-  </p>
+    <p style = "font-size: 18px">
+      My name is Coy Fouchia Jr. and I am an upcoming sophmore at Dillard University pursuing a major in Computer Science.
+      I chose Computer Science as my major because I always had an interests in video games and how they were made. 
+      It had always interest me how did the company was able to make some of my favorite games. 
+      The section of game creation the most was the back-end section.
+    </p>
+  </div>
        
   <script src="js/script.js"></script>
 </body>
