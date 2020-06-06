@@ -13,8 +13,37 @@
 </head>
 
 <style>
-p.thick {
-  font-weight: 900;
+
+.header {
+  border: 5px;
+  text-align: center;
+}
+
+.body {
+  display: flex;
+  flex: wrap;
+  background-color: white;
+}
+
+.toppanel {
+  flex: 30%;
+  background-color: grey;
+  padding: 20px;
+  text-align: center;
+}
+
+.panel {
+  flex: 70%;
+  background-color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 20px;
+}
+
+.panel2 {
+  flex: 30%;
+  background-color: lightgray;
+  padding: 20px;
 }
 
 .nav {
@@ -43,29 +72,44 @@ p.thick {
 </style>
 
 <body>
-  <div id = "mainBorder">
+  <div class = "header">
     <h1>Coy Fouchia's Portfolio</h1>
   </div>
 
   <div class = "nav">
-    <a href = "index.html">
+    <a class = "active" href = "index.html">
       Home
     </a>
-    <a class = "active" href = "#projects">
+    <a class = "active" href = "projects">
       Projects
     </a>
     <a href = "#pictures">
       Pictures
     </a>
   </div>
-  
-  <p class = "thick" style = "font-size: 32px;">
-    Projects
-  </p>
-          
-  <p id = "AutoCorr">Autocorrect Project(Python)</p>
-  <p id = "BattleShip">Battleship(Python)</p>
-  <p id = "BlackJack">Blackjack(Python)</p>
+    
+  <div class = "toppanel">
+    <p style = "font-size: 32px; font-weight: bold;">
+      Projects
+    </p>
+  </div>
+   
+  <div class = "panel">
+    <p id = "AutoCorr">Autocorrect Project(Python)</p>
+    <p id = "BattleShip">Battleship(Python)</p>
+    <p id = "BlackJack">Blackjack(Python)</p>
+  </div>
+
+  <div class = "panel2">
+    <p style = "font-weight: Bold; font-size: 32px; text-align: center;">
+      How to Use
+    </p>
+    <p>
+      Using this page is very simple! Just click on the project you want to checkout 
+      and the page will send you straight to the repl.it that the porject was created on. 
+      Enjoy!
+    </p>
+  </div>
 
   <script>
     var button = document.getElementById("AutoCorr");
