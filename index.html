@@ -24,19 +24,25 @@
 
 .body {
   display: flex;
+  flex: wrap;
   background-color: white;
 }
 
-.sidepanel {
+.toppanel {
   flex: 30%;
   background-color: grey;
   padding: 20px;
   text-align: center;
 }
 
-.mainpanel {
+.panel {
   flex: 70%;
   background-color: white;
+  padding: 20px;
+}
+
+.panel2 {
+  flex: 30%;
   padding: 20px;
 }
 
@@ -82,7 +88,7 @@
     </a>
   </div>
     
-  <div class = "sidepanel">
+  <div class = "toppanel">
     <p class = "thick" sytle = "font-size: 32px">
       Background
     </p>
@@ -90,13 +96,20 @@
     
   </div>
 
-  <div class = "mainpanel">
-    <p style = "font-size: 18px">
-      My name is Coy Fouchia Jr. and I am an upcoming sophmore at Dillard University pursuing a major in Computer Science.
-      I chose Computer Science as my major because I always had an interests in video games and how they were made. 
-      It had always interest me how did the company was able to make some of my favorite games. 
-      The section of game creation the most was the back-end section.
-    </p>
+  <div class = "body">
+    <div class = "panel">
+      <p style = "font-size: 18px">
+        My name is Coy Fouchia Jr. and I am an upcoming sophmore at Dillard University pursuing a major in Computer Science.
+        I chose Computer Science as my major because I always had an interests in video games and how they were made. 
+        It had always interest me how did the company was able to make some of my favorite games. 
+        The section of game creation the most was the back-end section.
+      </p>
+    </div>
+    <div class = "panel2">
+      <p>
+        Resume
+      </p>
+    </div>
   </div>
        
   <script src="js/script.js"></script>
