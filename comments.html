@@ -70,6 +70,17 @@
   background-color: #4cad4c;
   color: white;
 }
+
+.respond {
+  margin-top: 40px;
+}
+
+.respond input[type = "text"], .respond textarea {
+  margin-bottom: 10px;
+  display: block;
+  border: 1px solid;
+  line-height: 1.4em;
+}
 </style>
 
 <body>
@@ -98,23 +109,16 @@
     </p>
   </div>
   
-  <p id = "test"></p>
+  <section id = "comments">
+    <div id = "respond">
+      <form action = "post_comment.php" method = "post" id = "commentform">
+        <label for = "name">Name:</label>
+        <input type = "text" name = "name" id = "name">
 
-  <div class = "body">
-    <form method = "get" action = "/comments.html" id = "userform">
-      Name: <input type = "text" name = "username">
-      <input type = "submit">
-    </form>
-    <br>
-    <textarea rows = "4" cols = "50" name = "comment" form = "userform"></textarea>
-  </div>
-
-
-  <script>
-    var usrname = username;
-    var txt = comment;
-    document.getElementById("test").innerHTML = usrname + ": " + txt;
-  </script>
+        <textarea name ="comment" id = "comment" row = "5"></textarea>
+      </form>
+    </div>
+  </section>
 
 <body>
 
